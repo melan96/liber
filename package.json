@@ -4,7 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -17,9 +19,11 @@
     "mongoose": "^5.5.11",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0"
+    "react-router-dom": "^5.0.0",
+    "snyk": "^1.199.0"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.3"
-  }
+  },
+  "snyk": true
 }
